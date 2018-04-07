@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:padding="3dp">
+
+    <ImageView style="@style/LineStyle" />
+
+    <TextView
+        android:id="@+id/manga_list_tv"
+        style="@style/TextViewItemStytle" />
+
+    <ImageView style="@style/LineStyle" />
+</LinearLayout>

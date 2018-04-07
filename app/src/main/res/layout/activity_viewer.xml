@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/viewer_toolbar"
+        style="@style/ToolbarStyle">
+        <RelativeLayout
+            android:id="@+id/viewr_toolbar_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/viewer_back"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back_white_24dp"
+                style="@style/ImageButtonStyle" />
+            <TextView
+                android:id="@+id/viewer_title"
+                android:layout_toRightOf="@id/viewer_back"
+                android:layout_toLeftOf="@id/viewer_spinner"
+                style="@style/TextViewTitleStyle" />
+            <Spinner
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/viewer_spinner"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        style="@style/ToolbarStyle"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/main_type_go"
+                style="@style/ImageButtonStyle"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/main_search_go"
+                android:background="@drawable/ic_star_type_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/main_search_go"
+                style="@style/ImageButtonStyle"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_search_white_24dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_tablayout"
+        android:layout_below="@id/main_toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp">
+
+    </android.support.design.widget.TabLayout>
+
+
+</RelativeLayout>

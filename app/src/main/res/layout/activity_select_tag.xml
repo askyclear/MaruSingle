@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/select_toolbar"
+        style="@style/ToolbarStyle">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/select_toolbar_container">
+            <ImageView
+                android:id="@+id/select_back"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/ic_arrow_back_white_24dp"
+                style="@style/ImageButtonStyle"
+                android:layout_marginRight="6dp"/>
+            <TextView
+                style="@style/ToolbarTitleStyle"
+                android:layout_gravity="center"
+                android:text="선호 장르"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_tags_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
